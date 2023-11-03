@@ -2,12 +2,12 @@
 
 main()
 {
-	int x;
+	int age;
 	printf("enter your valur :");
-	scanf("%d",&x);
-	if(x>0)
+	scanf("%d",&age);
+	if(age>0)
 	{
-		if(x>100)
+		if(age>100)
 		{
 			printf("your so older ");
 		}
@@ -19,7 +19,7 @@ main()
 	}
 	else
 	{
-		if(x==0)
+		if(age==0)
 		{
 			printf("your age is neu");
 		}
