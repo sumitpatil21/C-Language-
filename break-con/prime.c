@@ -2,15 +2,17 @@
 
 main()
 {
-	int x=1,n,sum=0;
-	printf("enter your value :");
-	scanf("%d",&n);
-	if(n%3!=0 && n%5!=0 && n%7!=0 && n%11!=0 && n%13!=0 || n==3 || n==5 || n==7 || n==11 || n==13 )
+	int x=1,n=50,sum=0;
+	st:
+	if(x<=n)
 	{
-		printf("prime num");
-	}
-	else
-	{
-		printf("not prime num");	
-	}
+		x++;
+	    if(x%2!=0 && x%3!=0 && x%5!=0 && x%7!=0 || x==2 || x==3 || x==5 || x==7)
+	    {
+		printf(" %d",x);
+		sum=sum+x;
+     	}
+	goto st;
+    } 
+ printf("\nsum is %d",sum);
 }
